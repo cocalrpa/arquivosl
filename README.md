@@ -71,10 +71,4 @@ Seu arquivo deve conter as seguintes colunas:
     </a>
 </div>
 
----
 
-**Dica**: Substitua `<url-do-seu-repositorio>` pelo link real do seu repositório.
-
----
-
-Quer que eu faça mais algum ajuste? (ex: adicionar badges, mudar o título, etc.)
