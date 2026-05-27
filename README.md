@@ -1,10 +1,3 @@
-** README.md atualizado com sucesso!**
-
-Aqui está a nova versão, sem emoticons e com o bloco `devBy` adicionado no final:
-
----
-
-```markdown
 # Indicadores de Arquivo
 
 Um dashboard moderno e interativo para monitoramento de ocupação de caixas em arquivo, desenvolvido com Streamlit.
