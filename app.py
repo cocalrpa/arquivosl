@@ -345,7 +345,7 @@ with col5:
 st.markdown("---")
 
 # GRÁFICOS
-st.markdown("### Distribuicao de ocupacao")
+st.markdown("### Distribuição de ocupação")
 col_chart, col_stats = st.columns([2, 1], gap='large')
 
 with col_chart:
@@ -362,7 +362,7 @@ with col_stats:
     media_caixa = total_itens / caixas_ocupadas if caixas_ocupadas > 0 else 0
     st.markdown(f"""
     #### Resumo
-    **Situacao**
+    **Situação**
     - **Ocupadas:** {caixas_ocupadas} ({pct_ocupadas:.0f}%)
     - **Vazias:** {caixas_vazias} ({pct_vazias:.0f}%)
 
@@ -373,7 +373,7 @@ with col_stats:
 
 st.markdown("---")
 
-st.markdown("### Caixas com maior ocupacao")
+st.markdown("### Caixas com maior ocupação")
 df_top = df.nlargest(10, 'total_itens')
 fig_barras = go.Figure(data=[go.Bar(
     x=df_top['codigo'].astype(str) if 'codigo' in df_top.columns else range(len(df_top)),
@@ -389,9 +389,9 @@ st.markdown("---")
 st.markdown("### Detalhamento completo")
 
 busca = st.text_input(
-    "Buscar por Codigo, Endereco ou quantidade",
+    "Buscar por Código, Endereço ou quantidade",
     placeholder="Ex: RUA006, 19, 83...",
-    help="Digite qualquer informacao para filtrar"
+    help="Digite qualquer informação para filtrar"
 )
 
 df_display = df.copy()
