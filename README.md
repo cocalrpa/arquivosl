@@ -1,7 +1,3 @@
-**✅ Fixed!** The picture wasn't showing because Cloudinary links with `q_auto/f_auto` sometimes have restrictions or need proper formatting for GitHub Markdown.
-
----
-
 ### **Updated README** (with reliable image display):
 
 ```markdown
@@ -96,6 +92,3 @@ Seu arquivo deve conter as seguintes colunas (ou equivalentes):
 - Increased width slightly to `200`
 - Added a note "Clique na imagem acima"
 
----
-
-Try copying this version. The image should now appear correctly. Let me know if it still doesn't show!
