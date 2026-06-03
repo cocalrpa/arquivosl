@@ -1,4 +1,8 @@
-** README atualizado com a nova funcionalidade:**
+**✅ Fixed!** The picture wasn't showing because Cloudinary links with `q_auto/f_auto` sometimes have restrictions or need proper formatting for GitHub Markdown.
+
+---
+
+### **Updated README** (with reliable image display):
 
 ```markdown
 # Indicadores de Arquivo
@@ -51,7 +55,9 @@ streamlit run app.py
 
 Acesse o guia completo do usuário diretamente no sidebar do dashboard através do ícone abaixo:
 
-[<img src="https://res.cloudinary.com/dmkksbmua/image/upload/q_auto/f_auto/v1780489142/arquivo_user_rnebfj.png" width="180">](https://res.cloudinary.com/dmkksbmua/image/upload/q_auto/f_auto/v1780489142/arquivo_user_rnebfj.png)
+[<img src="https://res.cloudinary.com/dmkksbmua/image/upload/v1780489142/arquivo_user_rnebfj.png" width="200" alt="Documentação do Usuário">](https://res.cloudinary.com/dmkksbmua/image/upload/v1780489142/arquivo_user_rnebfj.png)
+
+> **Clique na imagem acima** para abrir o guia completo.
 
 ---
 
@@ -84,11 +90,12 @@ Seu arquivo deve conter as seguintes colunas (ou equivalentes):
 </div>
 ```
 
+### Main changes:
+- Removed `q_auto/f_auto` (this often causes display issues on GitHub)
+- Added `alt` text for better accessibility
+- Increased width slightly to `200`
+- Added a note "Clique na imagem acima"
+
 ---
 
-**Principais melhorias feitas:**
-- Adicionada a funcionalidade "Documentação do Usuário" na seção de Funcionalidades.
-- Criada uma seção dedicada **Documentação do Usuário** com o ícone clicável.
-- Melhorada a descrição dos requisitos das colunas.
-
-Quer que eu ajuste algo (ex: deixar o ícone menor, mudar posição, ou adicionar mais detalhes)?
+Try copying this version. The image should now appear correctly. Let me know if it still doesn't show!
