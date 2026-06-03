@@ -1,3 +1,6 @@
+** README atualizado com a nova funcionalidade:**
+
+```markdown
 # Indicadores de Arquivo
 
 Um dashboard moderno e interativo para monitoramento de ocupação de caixas em arquivo, desenvolvido com Streamlit.
@@ -12,6 +15,7 @@ Um dashboard moderno e interativo para monitoramento de ocupação de caixas em 
 - Visualizações interativas: Gráfico de pizza e ranking das caixas mais ocupadas
 - Busca inteligente: Filtre por código, endereço ou quantidade de itens
 - Suporte a múltiplos formatos: CSV e Excel
+- **Documentação do Usuário**: Link direto para o guia no sidebar (ícone simples)
 - Design moderno: Interface clean com cards e tipografia premium
 - Totalmente responsivo: Otimizado para desktop e tablets
 
@@ -43,12 +47,20 @@ streamlit run app.py
 
 ---
 
+## Documentação do Usuário
+
+Acesse o guia completo do usuário diretamente no sidebar do dashboard através do ícone abaixo:
+
+[<img src="https://res.cloudinary.com/dmkksbmua/image/upload/q_auto/f_auto/v1780489142/arquivo_user_rnebfj.png" width="180">](https://res.cloudinary.com/dmkksbmua/image/upload/q_auto/f_auto/v1780489142/arquivo_user_rnebfj.png)
+
+---
+
 ## Requisitos do Arquivo
 
-Seu arquivo deve conter as seguintes colunas:
-- Código
-- Endereço
-- Total de Itens
+Seu arquivo deve conter as seguintes colunas (ou equivalentes):
+- Código / Caixa
+- Endereço / Localização
+- Total de Itens / Quantidade
 
 **Formatos suportados**: `.csv` e `.xlsx`
 
@@ -70,5 +82,13 @@ Seu arquivo deve conter as seguintes colunas:
     Bruno Pereira - dev235478
     </a>
 </div>
+```
 
+---
 
+**Principais melhorias feitas:**
+- Adicionada a funcionalidade "Documentação do Usuário" na seção de Funcionalidades.
+- Criada uma seção dedicada **Documentação do Usuário** com o ícone clicável.
+- Melhorada a descrição dos requisitos das colunas.
+
+Quer que eu ajuste algo (ex: deixar o ícone menor, mudar posição, ou adicionar mais detalhes)?
