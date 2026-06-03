@@ -141,7 +141,8 @@ def processar_arquivo_csv(arquivo):
         return None
     
     idx_cabecalho = detectar_cabecalho(linhas_limpa)
-    
+  
+
     linhas_para_df = linhas_limpa[idx_cabecalho:]
     texto_limpo = "\n".join(linhas_para_df)
     
@@ -159,7 +160,7 @@ def processar_arquivo_csv(arquivo):
 def processar_arquivo_excel(arquivo):
     """Processa arquivo Excel."""
     df = pd.read_excel(arquivo, header=None)
-    
+      
     melhor_linha = detectar_cabecalho_excel(df)
     
     if melhor_linha > 0:
@@ -257,6 +258,14 @@ with st.sidebar:
         type=['csv', 'xls', 'xlsx'],
         help="Arquivo pode ter cabeçalho em qualquer posição"
     )
+    
+    # === LINK PARA DOCUMENTAÇÃO ===
+    st.markdown("### Documentação")
+    st.markdown(f"""
+    <a href="https://res.cloudinary.com/dmkksbmua/image/upload/q_auto/f_auto/v1780489142/arquivo_user_rnebfj.png" target="_blank">
+        <img src="https://res.cloudinary.com/dmkksbmua/image/upload/q_auto/f_auto/v1780489142/arquivo_user_rnebfj.png" width="42" style="border-radius: 8px;">
+    </a>
+    """, unsafe_allow_html=True)
 
 # CARREGAMENTO
 df = None
@@ -291,7 +300,7 @@ with col_logo:
 
 with col_title:
     st.markdown("# Indicadores de Arquivo")
-    st.markdown("Monitoramento de ocupacao de caixas armazenadas")
+    st.markdown("Monitoramento de ocupação de caixas armazenadas")
 
 st.markdown("---")
 
@@ -389,7 +398,7 @@ st.markdown("---")
 st.markdown("### Detalhamento completo")
 
 busca = st.text_input(
-    "Buscar por Código, Endereço ou quantidade",
+    "Buscar por código, endereçoo ou quantidade",
     placeholder="Ex: RUA006, 19, 83...",
     help="Digite qualquer informação para filtrar"
 )
@@ -417,7 +426,7 @@ st.dataframe(
 st.markdown("---")
 st.markdown(f"""
 <div style="text-align: center; color: #31515f; font-size: 12px; margin-top: 20px;">
-Cocal Indicadores de Arquivo | Atualizacao: {pd.Timestamp.now().strftime('%d/%m/%Y %H:%M')}
+Cocal Indicadores de Arquivo | Atualização: {pd.Timestamp.now().strftime('%d/%m/%Y %H:%M')}
 </div>
 """, unsafe_allow_html=True)
 
