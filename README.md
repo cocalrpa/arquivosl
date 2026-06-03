@@ -1,8 +1,6 @@
 #  Indicadores de Arquivo
 
-Um dashboard moderno e interativo para monitoramento de ocupação de caixas em arquivo, desenvolvido com **Streamlit**.
-
-![Dashboard Preview](https://res.cloudinary.com/dnfqlwaqe/image/upload/v1779897829/ArquivoPBI_dzgkh1.png)
+Um dashboard moderno e interativo para monitoramento de ocupação de caixas em arquivo, desenvolvido com **Power-up Python Integration**.
 
 ---
 
@@ -23,9 +21,62 @@ Um dashboard moderno e interativo para monitoramento de ocupação de caixas em 
 
 ---
 
-##  Como Executar
+## Como Executar
 
 ### 1. Clone o repositório
 ```bash
 git clone <url-do-seu-repositorio>
 cd indicadores-de-arquivo
+```
+
+### 2. Instale as dependências
+```bash
+pip install streamlit pandas plotly openpyxl
+```
+
+### 3. Execute o dashboard
+```bash
+streamlit run app.py
+```
+
+---
+
+## Documentação do Usuário
+
+Acesse o guia completo do usuário diretamente no sidebar do dashboard através do ícone abaixo:
+
+[<img src="https://res.cloudinary.com/dmkksbmua/image/upload/v1780489142/arquivo_user_rnebfj.png" width="200" alt="Documentação do Usuário">](https://res.cloudinary.com/dmkksbmua/image/upload/v1780489142/arquivo_user_rnebfj.png)
+
+> **Clique na imagem acima** para abrir o guia completo.
+
+---
+
+## Requisitos do Arquivo
+
+Seu arquivo deve conter as seguintes colunas (ou equivalentes):
+- Código / Caixa
+- Endereço / Localização
+- Total de Itens / Quantidade
+
+**Formatos suportados**: `.csv` e `.xlsx`
+
+---
+
+## Tecnologias Utilizadas
+
+- Streamlit - Framework web
+- Pandas - Manipulação de dados
+- Plotly - Gráficos interativos
+- Python 3.9+
+
+---
+
+## Desenvolvido por
+
+<div style="text-align: center; margin-top: 10px; font-size: 12px;">
+    devBy: <a href="https://wa.me/5518997957724" target="_blank" style="color:#31515f; text-decoration:none;">
+    Bruno Pereira - dev235478
+    </a>
+</div>
+```
+
